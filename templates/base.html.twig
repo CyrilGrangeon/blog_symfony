@@ -7,7 +7,7 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         <link rel="stylesheet" href="{{ asset('assets/themes/css/bootstrap.min.css') }}">
         {% block stylesheets %}{% endblock %}
-        <script src="{{ asset('assets/themes/js/bootstrap.min.css') }}"></script>
+        <script defer src="{{ asset('assets/themes/js/bootstrap.min.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </head>
     <body>
