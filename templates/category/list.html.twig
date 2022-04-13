@@ -8,12 +8,14 @@
         {% for category in categories %}
                 <div class="card text-white bg-primary mb-3" >
                     
+                    <div class="card-header">Categorie</div>
                     <div class="card-body">
-                    <h4 class="card-title">{{ category.title }}</h4>
-                
-                    <a class="btn btn-secondary" href="{{ path('category_show', {slug: category.slug  }) }}">Voir cette categorie</a>
+                    <h4 class="card-title">{{ category.name }}</h4>
+                    <a class='btn btn-primary' href="{{ path('category-show', {slug:category.slug}) }}">Voir</a>
+                    <a class='btn btn-secondary' href="{{ path('category-edit', {slug:category.slug}) }}">Modifier</a>
                 </div>
             </div>
+            
                 
         {% endfor %}
     </div>

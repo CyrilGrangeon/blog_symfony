@@ -7,7 +7,7 @@
     <div class="row flex p-5">
         {% for article in articles %}
                 <div class="card text-white bg-primary mb-3" >
-                    <div class="card-header">Publié le  {{ article.updatedAt|date('d,m,Y') }} à  {{ article.updatedAt|date('d,m,Y') }}</div>
+                    <div class="card-header">Publié le  {{ article.updatedAt|date('d,m,Y') }} à  {{ article.updatedAt|date('H:i') }} dans la categorie {{ article.category.name }}</div>
                     <div class="card-body">
                     <h4 class="card-title">{{ article.title }}</h4>
                     <p class="card-text">{{ article.content }}</p>
